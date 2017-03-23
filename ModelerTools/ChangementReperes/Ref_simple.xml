@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReferenceFrameManager>
+  <ReferenceFrames>
+    <ReferenceFrame id="A" name="Repère A" />
+    <ReferenceFrame id="B" name="Repère B" />
+  </ReferenceFrames>
+  <ChangesInReferenceFrames>
+    <ChangesInReferenceFrame from="A" to="B">
+      <Homothecy kh="10" kv="2" />
+      <Rotation angle="90" center="10, 10" />
+      <Translation x="10" y="-10" z="10" />
+    </ChangesInReferenceFrame>
+  </ChangesInReferenceFrames>
+</ReferenceFrameManager>

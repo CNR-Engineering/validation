@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReferenceFrameManager>
+  <ReferenceFrames>
+    <!--Listes des repères-->
+    <ReferenceFrame id="N" name="Nature (RGF93)" />
+    <ReferenceFrame id="P" name="Modèle Physique" />
+    <ReferenceFrame id="T" name="Telemac" />
+  </ReferenceFrames>
+  <ChangesInReferenceFrames>
+    <!--Listes des transformations de base-->
+    <ChangesInReferenceFrame from="P" to="N">
+      <!--Transformations issues d'une calibration (avec Covadis 2D) sur les PK{62,63,64}-->
+      <Rotation angle="42.67215" /><!--42.67215° = 47.4135 grad (facteur 0.9)-->
+      <Homothecy kh="100" />
+      <Translation x="359851.0270" y="6674069.7799" />
+    </ChangesInReferenceFrame>
+    <ChangesInReferenceFrame from="T" to="N">
+      <!--Simple translation pour le repère local Telemac-->
+      <Translation x="350000" y="6680000" />
+    </ChangesInReferenceFrame>
+  </ChangesInReferenceFrames>
+</ReferenceFrameManager>

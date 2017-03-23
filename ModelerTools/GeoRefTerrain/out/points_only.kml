@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<!-- Exported on  with GeoRefTerrain.py -->
+  <Document>
+    <name></name>
+    <Style id="camera">
+      <scale>1.1</scale>
+      <IconStyle>
+        <color>ff00ffff</color>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pal4/icon38.png</href>
+          <x>192</x>
+          <y>96</y>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+        <hotSpot x="20" xunits="pixels" y="2" yunits="pixels"/>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Photos</name>
+
+      <Placemark>
+        <name>P4140017.JPG</name>
+        <description><![CDATA[<img src='P4140017.JPG' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.83685,45.97665333333334,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140034.jpg</name>
+        <description><![CDATA[<img src='P4140034.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.831666666666666,45.963055555555556,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140041.jpg</name>
+        <description><![CDATA[<img src='P4140041.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.832413333333333,45.96795166666667,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140054.jpg</name>
+        <description><![CDATA[<img src='P4140054.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.830263333333333,45.97482,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140059.jpg</name>
+        <description><![CDATA[<img src='P4140059.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.81811,45.979075,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140065.jpg</name>
+        <description><![CDATA[<img src='P4140065.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.803845,46.014185,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140077.jpg</name>
+        <description><![CDATA[<img src='P4140077.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.8053,46.013465,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <Placemark>
+        <name>P4140079.jpg</name>
+        <description><![CDATA[<img src='P4140079.jpg' width='533' height='400'/>]]></description>
+        <styleUrl>#camera</styleUrl>
+        <Point>
+          <coordinates>5.805903333333333,46.012795,0</coordinates>
+        </Point>
+      </Placemark>
+
+    </Folder>
+
+  </Document>
+</kml>

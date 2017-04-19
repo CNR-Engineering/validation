@@ -1,0 +1,23 @@
+#########################################################################
+:FileType i2s  ASCII  EnSim 1.0
+# Canadian Hydraulics Centre/National Research Council (c) 1998-2012
+# DataType                 2D Line Set
+#
+:Application               scripts_LDN
+:Version                   3.3.4
+:WrittenBy                 duron
+:CreationDate              2015-04-27 07:32:00
+:AttributeUnits            1 m
+:EndHeader
+2 172.0
+5150.9434 25819.4587
+5243.9769 25561.633
+2 172.5
+4757.6341 25520.3684
+4924.663 25332.9184
+2 173.0
+4440.8059 24975.199
+4630.1472 24933.8577
+2 173.5
+4272.7861 24476.3447
+4498.5384 24419.889

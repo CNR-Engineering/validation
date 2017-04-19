@@ -1,0 +1,24 @@
+#########################################################################
+:FileType i2s  ASCII  EnSim 1.0
+# Canadian Hydraulics Centre/National Research Council (c) 1998-2012
+# DataType                 2D Line Set
+#
+:Application              BlueKenue
+:Version                  3.3.4
+:WrittenBy                duron
+:CreationDate             Mon, Jun 22, 2015 01:16 PM
+#
+#------------------------------------------------------------------------
+:Name  sections_GE
+#
+:AttributeUnits 1 m
+:EndHeader
+2 0
+868920.470165 123496.937884
+868944.667125 123567.840604
+2 1
+868906.445530 123102.444946
+868916.795387 123085.799814
+2 2
+869021.501048 122935.430149
+869013.559480 122919.267380

@@ -1,0 +1,105 @@
+/---------------------------------------------------------------------
+/ TELEMAC2D Version v6p2
+/---------------------------------------------------------------------
+
+/DEBUGGER=1
+PROCESSEURS PARALLELES = 16
+
+/---------------------------------------------------------------------
+/ ENTREES-SORTIES, FICHIERS
+/---------------------------------------------------------------------
+
+FICHIER DE GEOMETRIE = '../DONNEES/mesh.slf'
+FICHIER DES CONDITIONS AUX LIMITES = '../DONNEES/mesh.conlim'
+FICHIER DES FRONTIERES LIQUIDES    = '../DONNEES/sc3.liq'
+
+FICHIER FORTRAN                    = 't2d_init_elev.f'
+
+FICHIER DES RESULTATS              = 'r2d.slf'
+
+/---------------------------------------------------------------------
+/ ENTREES-SORTIES
+/---------------------------------------------------------------------
+
+TITRE = 'MON SUPER CALCUL'
+
+VARIABLES POUR LES SORTIES GRAPHIQUES = H,B,S,Q,M,U,V,W,US,F,L
+PERIODE DE SORTIE LISTING             = 100 /5min
+PERIODE POUR LES SORTIES GRAPHIQUES   = 1500 /idem
+
+BILAN DE MASSE                        = VRAI
+
+/---------------------------------------------------------------------
+/ EQUATIONS
+/---------------------------------------------------------------------
+
+MODELE DE TURBULENCE                  = 1 /viscosite constante
+COEFFICIENT DE DIFFUSION DES VITESSES = 0.005
+
+LOI DE FROTTEMENT SUR LE FOND         = 3 /Strickler
+COEFFICIENT DE FROTTEMENT             = 40
+
+LOI DE FROTTEMENT SUR LES PAROIS LATERALES = 0 /0=aucune, 3=Strickler, 5=Nikuradse
+COEFFICIENT DE RUGOSITE DES BORDS          = 50
+
+/---------------------------------------------------------------------
+/ CONDITIONS INITIALES
+/---------------------------------------------------------------------
+
+CONDITIONS INITIALES         = "COTE CONSTANTE"
+COTE INITIALE                = 120.0
+
+/---------------------------------------------------------------------
+/ CONDITIONS LIMITES
+/---------------------------------------------------------------------
+
+/valeur aberrante (999.) si cela la valeur n'est pas lue ou est ecrasée
+DEBITS IMPOSES =999. ; 500
+
+COTES IMPOSEES = 120.0 ; 999.
+
+PROFILS DE VITESSE                  =1;1
+
+OPTION POUR LES FRONTIERES LIQUIDES =2;1
+
+/---------------------------------------------------------------------
+/ PARAMETRES NUMERIQUES
+/---------------------------------------------------------------------
+
+CALCUL COMPATIBLE DES FLUX                 = VRAI
+TRAITEMENT DU SYSTEME LINEAIRE             = 2
+COMPATIBILITE DU GRADIENT DE SURFACE LIBRE = 0.9
+FORME DE LA CONVECTION                     = 1;5
+PRECONDITIONNEMENT                         = 2
+STOCKAGE DES MATRICES                      = 3
+
+PAS DE TEMPS                               = 0.2
+DUREE DU CALCUL                            = 43200 /12h 43200
+
+OPTION DE SUPG                             = 1;0
+
+BANCS DECOUVRANTS                          = VRAI
+OPTION DE TRAITEMENT DES BANCS DECOUVRANTS = 1 /defaut=1=correction, 2=gel
+TRAITEMENT DES HAUTEURS NEGATIVES          = 2 /defaut=1=lissage, 2=limite flux
+CORRECTION DE CONTINUITE                   = OUI
+
+/PROFONDEUR LIMITE POUR PROCEDURE DE RESSUYAGE = 0.1
+
+/---------------------------------------------------------------------
+/ PARAMETRES NUMERIQUES, SOLVEUR
+/---------------------------------------------------------------------
+
+OPTION DU SOLVEUR    = 4
+SOLVEUR              = 1
+PRECISION DU SOLVEUR = 0.00001
+
+/---------------------------------------------------------------------
+/ PARAMETRES NUMERIQUES, DIFFUSION
+/---------------------------------------------------------------------
+
+MASS-LUMPING SUR LA VITESSE = 1.0
+MASS-LUMPING SUR H          = 1.0
+
+IMPLICITATION POUR LA HAUTEUR = 1.0 /defaut=0.55, max=1.0
+IMPLICITATION POUR LA VITESSE = 1.0 /defaut=0.55, max=1.0
+/IMPLICITATION POUR LA DIFFUSION DES VITESSES = 1. /default=1
